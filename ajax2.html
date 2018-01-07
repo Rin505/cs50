@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script>
         function quote()
         {
-            var url = 'quote.php?symbol=' + $('#symbol').val();
-            $.getJSON(url, function(data) {
-                alert(data.price);
+            var url = '/quote?symbol='  + $('#symbol').val();
+            $.getJSON(url, function(data)  {
+                $('#quote').html('A share of ' + data.name + ' costs $' + data.price + '.');
+                $('#ymbol').val('');
             });
         }
     </script>
-    <title>ajax-0</title>
+
+    <title>ajax2</title>
 </head>
 <body>
 <form onsubmit="quote(); return false;">
