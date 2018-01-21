@@ -1,4 +1,19 @@
 <doctype html>
+
+     <script>
+        function blink()
+        {
+          var div = document.getElementById('greeting');
+          if (div.style.visibility == 'hidden') {
+            div.style.visibility = 'visible';
+          }
+          else {
+            div.style.visibility = 'hidden';
+          }
+        }
+        window.setInterval(blink, 1000);
+      </script>
+
   <html>
   <head>
     <title>html test page</title>
@@ -6,7 +21,7 @@
   <body>
     <div id="greeting">
       <p>
-        You were linked to this page from dom page
+        <a href="eyes.html">You were linked to this page from dom page</a>
       </p>
     </div>
 
@@ -23,7 +38,7 @@
   }
   </style>
   <style>
-  head, body {
-    background-color: rgb(12, 101, 107);
+  body {
+    background-image: url(pictures/nature.jpg);
   }
   </style>
