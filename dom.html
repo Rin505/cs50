@@ -1,0 +1,49 @@
+<doctype html>
+
+  <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+
+  <html>
+    <script>
+
+      function blink()
+      {
+        var div = document.getElementById('greeting');
+        if (div.style.visibility == 'hidden') {
+          div.style.visibility = 'visible';
+        }
+        else {
+          div.style.visibility = 'hidden';
+        }
+      }
+      window.setInterval(blink, 500);
+    </script>
+  <head>
+    <title>
+    Html test page</title>
+  </head>
+  <body>
+    <h2>Here's my page</h2>
+    <div id="greeting">
+      <p>
+        World, hello
+      </p>
+    </div>
+
+    <a href="dom_test.html">Link</a>
+  </body>
+
+  <style>
+    #greeting {
+      font-family: 'Barrio', cursive;
+      font-size: 90pt;
+      color: rgb(113, 24, 24);
+    }
+  </style>
+  <style>
+  body {
+    text-align: center;
+    font-size: 50pt;
+    margin: 240px;
+  }
+  </style>
+  </html>
