@@ -1,0 +1,60 @@
+<style>
+  #colorDiv
+  {
+    text-align: center;
+    font-size: 50pt;
+  }
+</style>
+
+<doctype html>
+
+  <script src="color.js"></script>
+  <script src="event.js"></script>
+  <script src="general.js"></script>
+  <script src="jquerycolor.js"></script>
+
+  <html>
+  <head>
+    <title>Color testing</title>
+  </head>
+  <body>
+    <div id="colorDiv">
+      Change my color!
+    </div>
+    <h3>Individual functions for background</h3>
+    <div>
+      <button onclick="turnPurple();">Purple</button>
+      <button onclick="turnGreen();">Green</button>
+      <button onclick="turnOrange();">Orange</button>
+      <button onclick="turnRed();">Red</button>
+      <button onclick="turnBlue();">Blue</button>
+    </div>
+    <h3>Single function for Background Color</h3>
+    <div>
+      <button onclick="changeColor('purple');">Purple</button>
+      <button onclick="changeColor('Green');">Green</button>
+      <button onclick="changeColor('orange');">Orange</button>
+      <button onclick="changeColor('red');">Red</button>
+      <button onclick="changeColor('Blue');">Blue</button>
+    </div>
+    <h3>Event handler for Background Color</h3>
+    <div>
+      <button onclick="changeColorEvent(event);">Purple</button>
+      <button onclick="changeColorEvent(event);">Green</button>
+      <button onclick="changeColorEvent(event);">Orange</button>
+      <button onclick="changeColorEvent(event);">Red</button>
+      <button onclick="changeColorEvent(event);">Blue</button>
+    </div>
+
+    <h3>Using JQuery</h3>
+    <div>
+      <button class="JQButton">Purple</button>
+      <button class="JQButton">Green</button>
+      <button class="JQButton">Orange</button>
+      <button class="JQButton">Red</button>
+      <button class="JQButton">Blue</button>
+    </div>
+
+  </body>
+  </html>
+</doctype>
